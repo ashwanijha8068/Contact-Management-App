@@ -1,0 +1,54 @@
+Documentation: Creating a Contact Management App with Charts and Maps
+Introduction
+This documentation provides step-by-step instructions for creating a contact management app with charts and maps using ReactJS, TypeScript, TailwindCSS, React Router v6, and React Query (also known as TanstackQuery). The app will allow users to add, view, edit, and delete contacts, as well as display charts and maps related to COVID-19 cases worldwide.
+
+Tech Stack
+The following technologies will be used to build the app:
+
+ReactJS: A JavaScript library for building user interfaces.
+TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+TailwindCSS: A utility-first CSS framework for quickly building responsive designs.
+React Router v6: A routing library for React applications.
+React Query: A data-fetching and state management library for React.
+
+Contact Management Page
+The contact management page allows you to perform CRUD operations on contacts. Here's an overview of the page's functionality:
+
+Add a Contact:
+Display a form with input fields for name, last name, and status attributes.
+Implement validation to ensure all attributes are filled before submitting the form.
+Upon submitting the form, send a POST request to the backend API to add the contact.
+Display Contacts:
+Show a list of all added contacts.
+Each contact should have a button to view the contact details.
+View Contact Details:
+Implement a feature to view the details of a specific contact.
+Display attributes such as name, last name, and status.
+Edit Contact:
+Provide an option to edit the details of a contact.
+Show an edit button on the contact details page that opens a form with pre-filled values.
+Allow you to modify any attribute of the contact.
+Upon submitting the form, send a PUT request to update the contact in the backend.
+Delete Contact:
+Add a delete button on the contact details page.
+Allow you to delete the contact by sending a DELETE request to the backend.
+Store Contact Data with Redux:
+Use Redux to store the contact data.
+Implement actions and reducers to manage the state of the contacts.
+Charts and Maps Page
+The charts and maps page displays information related to COVID-19 cases worldwide. Here's an overview of the page's functionality:
+
+Line Graph for Cases Fluctuations:
+Use the provided API endpoint (https://disease.sh/v3/covid-19/historical/all?lastdays=all) to fetch historical data for COVID-19 cases.
+Utilize a charting library like Chart.js to create a line graph showing the fluctuations in cases over time.
+Display the total number of cases on the y-axis and the dates on the x-axis.
+React Leaflet Map with Markers:
+Fetch country-specific data for COVID-19 cases using the provided API endpoint (https://disease.sh/v3/covid-19/countries).
+Use the React Leaflet library to display a map with markers representing each country.
+Display the country name, total number of active, recovered cases, and deaths as a popup when clicking on a marker.
+Implement clustering for markers if there are too many countries to display at once.
+Deployment and Deliverables
+Create a GitHub/GitLab repository to host the app's code.
+Deploy the app on a free hosting service like Vercel, GitHub Pages, or Heroku.
+Properly comment the code to improve readability and maintainability.
+Provide a brief documentation on how to run the app, including information on the API endpoints used (https://disease.sh/v3/covid-19/all and https://disease.sh/v3/covid-19/countries).
